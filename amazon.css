@@ -1,1 +1,490 @@
+* {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
+.bar {
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.barlogo {
+  height: 35px;
+  width: 130px;
+  background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xs23v6v/NicePng_amazon-logo-png_167642.png);
+  background-size: cover;
+}
+
+.border {
+  border: 2px solid transparent;
+}
+.border:hover {
+  border: 2px solid white;
+}
+
+.select {
+  margin-left: 5px;
+  background-color: #cccccc;
+  height: 25px;
+  width: 35px;
+  border: 0.1px solid;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.first {
+  font-size: 0.8rem;
+  color: #cccccc;
+  padding-left: 16px;
+}
+
+.second {
+  font-size: 1rem;
+  color: #ffffff;
+  display: flex;
+}
+
+.bar2 {
+  display: flex;
+}
+.bar2:hover {
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+
+.searchicon {
+  background-color: #e68932;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.search {
+  font-size: 1rem;
+  outline: none;
+}
+
+.barflag {
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barflag:hover {
+  border: 2px solid white;
+}
+.tbb:hover {
+  border: 2px solid white;
+}
+.flag {
+  display: flex;
+  background-image: url(https://uploads.onecompiler.io/43wdhhrct/43xnkgwq8/18166.jpg);
+  background-size: cover;
+  height: 20px;
+  width: 30px;
+}
+
+span {
+  font-size: 0.7rem;
+  color: rgb(241, 240, 240);
+}
+
+.sign {
+  display: flex;
+}
+.signin:hover {
+  border: 2px solid white;
+}
+
+.orders:hover {
+  border: 2px solid white;
+}
+
+.cart i {
+  font-size: 2rem;
+}
+.cart span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.cart:hover {
+  border: 2px solid white;
+}
+
+.tbar {
+  height: 40px;
+  background-color: #232e40;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.item p {
+  display: inline;
+  margin-left: 20px;
+}
+.menu {
+  margin-left: 20px;
+}
+
+.main {
+  position: relative;
+  height: 400px;
+}
+.background {
+   background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+
+}
+.footo{
+height: 50px;
+background-color: #37475a;
+color: white;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items:center;
+font-size: 0.9rem;
+
+}
+.foott{
+  background-color: #232f3f;
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul a{
+  display: block;
+  font-size: .9rem;
+  margin-top: 10px ;
+  color: dddddd;
+}
+ul{
+  margin-top: 30px;
+}
+ul p{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.footth{
+  height: 70px;
+  background-color: #232f3f;
+  border-top: .3px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ .li {
+  background-color: #131A22;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.li ul {
+  width: 20%; /* 4 columns */
+  list-style: none;
+}
+
+.li a {
+  display: block;
+  color: #ddd;
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.li p {
+  color: #999;
+  margin-bottom: 14px;
+}
+
+.li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+ul{
+  margin-top: 30px;
+}
+ul p{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.footlogo{
+  background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xs23v6v/NicePng_amazon-logo-png_167642.png);
+  background-size: cover;
+  height: 45px;
+  width: 150px;
+}
+
+.footf {
+  background-color: #131A22;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap; /* for smaller screen */
+  padding: 40px 0;
+  font-size: 0.8rem;
+}
+.fl{
+
+  background-color: #131A22;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 15px 0;
+  border-top: 1px solid #3a4553;
+
+}
+.bbox {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;  /* 🔹 upar wali line */
+  border-bottom: 1px solid #ddd; /* 🔹 niche wali line */
+  margin-top: 410px; /* image ke upar lana ke liye */
+}
+
+.bbox p {
+  font-size: 14px;
+  color: #111;
+}
+
+.bbox button {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 8px 80px;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bbox button:hover {
+  background-color: #f7ca00;
+}
+
+.bbox a {
+  color: #007185;
+  text-decoration: none;
+}
+
+.bbox a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+
+ 
+.mbox {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.mbox h2{
+   white-space: nowrap;       /* ek line me rakhta hai */
+  overflow: hidden;          /* extra text chhupa dega */
+  text-overflow: ellipsis;   /* agar text lamba ho to ... dikhayega */
+  text-align: center;        /* center align */
+  font-size: 1.2rem;
+}
+.box {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+  margin-top:5%;
+}
+.thing1{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/game.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th1{
+  color:blue;
+  font-size:.9rem;
+}
+/*box2*/
+.box2 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing2{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/charger.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th2{
+  color:blue;
+  font-size:.9rem;
+}
+/*box3*/
+.box3 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing3{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/stand.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th3{
+  color:blue;
+  font-size:.9rem;
+}
+/*box4*/
+.box4 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing4{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/watch.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th4{
+  color:blue;
+  font-size:.9rem;
+}
+/*box5*/
+.box5 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing5{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/Cloths.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th5{
+  color:blue;
+  font-size:.9rem;
+}
+/*box6*/
+.box6 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing6{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/cloths2.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th6{
+  color:blue;
+  font-size:.9rem;
+}
+/*box7*/
+.box7 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing7{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/pistol.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th7{
+  color:blue;
+  font-size:.9rem;
+}
+/*box8*/
+.box8 {
+  background-color: white;
+  width: 23%;
+  height: 250px;
+   margin-top:5%;
+}
+.thing8{
+    background-image: url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/toy2.jpg);
+ height: 150px;
+ width: 90%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 4%;
+}
+.th8{
+  color:blue;
+  font-size:.9rem;
+}
