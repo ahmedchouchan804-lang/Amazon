@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Clone</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== TOP NAVBAR ===== */
+    .bar{
+      height:60px;
+      background:#0f1111;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:space-evenly;
+    }
+
+    .barlogo{
+      height:35px;
+      width:130px;
+      background:url(https://uploads.onecompiler.io/43xs5d6dn/43xs23v6v/NicePng_amazon-logo-png_167642.png) no-repeat center/cover;
+    }
+
+    .border:hover{border:2px solid white;}
+
+    .first{font-size:0.8rem;color:#ccc;}
+    .second{font-size:1rem;}
+
+    .bar2{display:flex;}
+    .bar2:hover{border:2px solid orange;border-radius:6px;}
+
+    .select{
+      height:25px;
+      width:40px;
+      border-radius:4px 0 0 4px;
+      border:none;
+      background:#ccc;
+    }
+
+    .search{
+      height:25px;
+      width:220px;
+      border:none;
+      outline:none;
+      padding-left:5px;
+    }
+
+    .searchicon{
+      width:35px;
+      background:#febd69;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:0 4px 4px 0;
+      color:black;
+    }
+
+    .barflag{display:flex;align-items:center;gap:5px;}
+    .flag{
+      height:20px;
+      width:30px;
+      background:url(https://uploads.onecompiler.io/43wdhhrct/43xnkgwq8/18166.jpg) no-repeat center/cover;
+    }
+
+    span{font-size:.7rem;color:#eee;}
+
+    .cart i{font-size:2rem;}
+
+    /* ===== SECOND BAR ===== */
+    .tbar{
+      height:40px;
+      background:#232f3e;
+      color:white;
+      display:flex;
+      align-items:center;
+    }
+
+    .menu,.item p{
+      margin-left:20px;
+      cursor:pointer;
+    }
+
+    .menu:hover,.item p:hover{border:2px solid white;padding:2px;}
+
+    /* ===== HERO ===== */
+    .main{position:relative;}
+    .background{
+      height:790px;
+      background:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/bg2.jpg) center/cover;
+    }
+
+    /* ===== PRODUCT BOXES ===== */
+    .mbox{
+      position:absolute;
+      top:200px;
+      width:100%;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-evenly;
+    }
+
+    .box{
+      background:white;
+      width:23%;
+      height:250px;
+      margin-top:20px;
+      padding:10px;
+    }
+
+    .box h2{
+      font-size:1.1rem;
+      text-align:center;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .thing{
+      height:150px;
+      width:90%;
+      margin:10px auto;
+      background-size:cover;
+      background-position:center;
+    }
+
+    .shop{color:#007185;font-size:.9rem;cursor:pointer;}
+
+    /* Images */
+    .t1{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/game.jpg);}
+    .t2{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/charger.jpg);}
+    .t3{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/stand.jpg);}
+    .t4{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/watch.jpg);}
+    .t5{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/Cloths.jpg);}
+    .t6{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/cloths2.jpg);}
+    .t7{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/pistol.jpg);}
+    .t8{background-image:url(https://uploads.onecompiler.io/43xs5d6dn/43xttjyxa/toy2.jpg);}
+
+    /* ===== SIGN IN BOX ===== */
+    .bbox{
+      background:white;
+      height:150px;
+      margin-top:410px;
+      text-align:center;
+      padding:20px;
+      border-top:1px solid #ddd;
+      border-bottom:1px solid #ddd;
+    }
+
+    .bbox button{
+      background:#ffd814;
+      border:1px solid #fcd200;
+      padding:8px 80px;
+      border-radius:8px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    /* ===== FOOTER ===== */
+    .footo{
+      background:#37475a;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+
+    .foott{
+      background:#232f3f;
+      color:white;
+      display:flex;
+      justify-content:space-evenly;
+      padding:40px 0;
+    }
+
+    .foott ul a{display:block;margin-top:8px;color:#ddd;font-size:.9rem;}
+
+    .footth{
+      background:#232f3f;
+      border-top:1px solid gray;
+      display:flex;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .footlogo{
+      height:45px;
+      width:150px;
+      background:url(https://uploads.onecompiler.io/43xs5d6dn/43xs23v6v/NicePng_amazon-logo-png_167642.png) center/cover;
+    }
+
+    .li{
+      background:#131A22;
+      color:#ccc;
+      text-align:center;
+      padding:20px;
+      font-size:.8rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="bar">
+    <div class="barlogo border"></div>
+
+    <div>
+      <p class="first">Deliver to</p>
+      <p class="second"><i class="fa-solid fa-location-dot"></i> Pakistan</p>
+    </div>
+
+    <div class="bar2">
+      <select class="select"><option>All</option></select>
+      <input class="search" placeholder="Search Amazon">
+      <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+
+    <div class="barflag">
+      <div class="flag"></div> EN
+    </div>
+
+    <div>
+      <span>Hello, sign in</span>
+      <p>Account & Lists</p>
+    </div>
+
+    <div>
+      <span>Returns</span>
+      <p>& Orders</p>
+    </div>
+
+    <div class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart
+    </div>
+  </div>
+
+  <div class="tbar">
+    <div class="menu"><i class="fa-solid fa-bars"></i> All</div>
+    <div class="item">
+      <p>Today's Deals</p>
+      <p>Customer Service</p>
+      <p>Gift Cards</p>
+      <p>Sell</p>
+    </div>
+  </div>
+</header>
+
+<div class="main">
+  <div class="background"></div>
+
+  <div class="mbox">
+    <div class="box"><h2>Game Stick Under $20</h2><div class="thing t1"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>C-Type Charger</h2><div class="thing t2"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>Phone Stand</h2><div class="thing t3"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>Watch Under $30</h2><div class="thing t4"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>Men's Shirts</h2><div class="thing t5"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>All Shade Shirts</h2><div class="thing t6"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>Shell Ejection Pistol</h2><div class="thing t7"></div><p class="shop">Shop now</p></div>
+    <div class="box"><h2>CO₂ Gun</h2><div class="thing t8"></div><p class="shop">Shop now</p></div>
+  </div>
+</div>
+
+<div class="bbox">
+  <p>See personalized recommendations</p>
+  <button>Sign in</button>
+  <p>New customer? Start here.</p>
+</div>
+
+<footer>
+  <div class="footo">Back to top</div>
+  <div class="footth"><div class="footlogo"></div></div>
+  <div class="li">© 1996-2025 Amazon Clone</div>
+</footer>
+
+</body>
+</html>
